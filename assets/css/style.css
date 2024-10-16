@@ -1,0 +1,544 @@
+* {
+  margin: 0;
+  padding: 0;
+
+  color: white;
+}
+body {
+  background: #222222;
+  overflow-x: hidden;
+}
+nav {
+  font-family: outfit;
+  display: flex;
+  justify-content: space-between;
+  height: 38px;
+  padding: 20px 100px;
+  align-items: center;
+  border-bottom-style: solid;
+  border-width: 1px;
+  border-color: #ffdbb8;
+}
+.logo-links {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+.logo-links ul img {
+  padding-right: 5px;
+}
+.logo-links ul {
+  padding-left: 38px;
+  border-width: 2px;
+  border-left-style: solid;
+  height: 20px;
+  display: flex;
+  list-style-type: none;
+  gap: 22px;
+}
+.logo-links ul li a {
+  display: flex;
+  text-decoration: none;
+}
+.actions {
+  display: flex;
+  gap: 20px;
+}
+nav .actions button {
+  background-color: transparent;
+  border: none;
+}
+.mode-switch {
+  display: flex;
+  align-items: center;
+  border-left-style: solid;
+}
+.mode-switch img {
+  margin-right: 5px;
+}
+.actions div {
+  display: flex;
+  gap: 22px;
+  border-right-style: solid;
+  border-color: #d27722;
+  border-width: 2px;
+  height: 20px;
+  padding-right: 20px;
+}
+.actions div button img {
+  padding-left: 5px;
+}
+.hero {
+  margin-top: 30px;
+  padding: 0 100px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 100px;
+}
+.hero h1 {
+  font-family: "Rubik";
+  font-size: 61px;
+  font-weight: 700;
+  line-height: 69px;
+  width: 650px;
+}
+.hero span {
+  font-family: "Pacifico";
+  font-weight: 400;
+  color: #d27722;
+}
+.hero p {
+  font-family: "Outfit";
+  text-align: justify;
+}
+.hero-desc {
+  width: 50%;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.hero-desc a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  font-family: Outfit;
+}
+.hero-actions {
+  display: flex;
+  gap: 8px;
+}
+.hero-actions button {
+  border-radius: 4px;
+  padding: 8px 16px;
+  background-color: #d27722;
+  color: white;
+  border-color: #d27722;
+  border-style: solid;
+  font-family: Outfit;
+}
+.hero .join-btn {
+  background-color: transparent;
+  color: #d27722;
+}
+.hero-comments img {
+  width: 450px;
+  margin-right: 20px;
+}
+.hero-comments {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.shape {
+  width: 122.92px;
+  height: 104.28px;
+  position: absolute;
+  z-index: 1;
+  top: 250px;
+  left: 185px;
+}
+.hero-comment {
+  position: absolute;
+  top: 220px;
+  right: 320px;
+  z-index: 1;
+  border-radius: 16px;
+  border-color: #ffdbb8;
+  border-width: 1px;
+  border-style: solid;
+  width: 260px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0;
+  background-color: #222222;
+}
+.hero-comment h5 {
+  font-family: Rubik;
+  font-size: 18px;
+}
+.hero-comment small {
+  font-size: 16px;
+  font-family: Outfit;
+  font-weight: 600;
+}
+.hero-comment p {
+  margin-top: 20px;
+  font-size: 14px;
+  font-family: "Outfit";
+}
+.hero-comment .rate {
+  width: 14px;
+}
+.hero-comment .person {
+  width: 65px;
+}
+.hero-comment div {
+  display: flex;
+}
+.info-person {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding-left: 10px;
+}
+.category-learn-container,
+.unique-benefits {
+  padding: 0 100px;
+  margin-bottom: 100px;
+}
+.learn-category-header,
+.unique-benefits-header {
+  margin-bottom: 50px;
+}
+.learn-category-header h1,
+.unique-benefits-header h1 {
+  font-size: 39px;
+  font-weight: 600;
+  font-family: Rubik;
+}
+.learn-category-header p,
+.unique-benefits-header p {
+  font-family: Outfit;
+}
+.learn-category-header div,
+.unique-benefits-header div {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+.learn-category-header button,
+.unique-benefits-header button {
+  background-color: transparent;
+  border: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.learn-category-body {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  height: 260px;
+  align-content: space-between;
+}
+.learn-catergory-card,
+.learn-catergory-card-barkey {
+  width: 280px;
+  border-radius: 16px;
+  padding: 24px 34px;
+  background-color: transparent;
+  display: flex;
+  border: solid #ffdbb8;
+  gap: 28px;
+  align-items: center;
+}
+.learn-catergory-card-barkey {
+  background-color: #d27722;
+  border: none;
+}
+.learn-catergory-card .title,
+.learn-catergory-card-barkey .title {
+  display: flex;
+  justify-content: space-between;
+  font-family: Rubik;
+  font-weight: 700;
+  font-size: 22px;
+  width: 220px;
+}
+.learn-catergory-card-body p {
+  font-size: 12px;
+  font-family: kanit;
+}
+.learn-catergory-card-img {
+  width: 45px;
+}
+.unique-benefits-card {
+  width: 330px;
+  height: 274px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+}
+.unique-benefits-card img {
+  width: 100px;
+}
+.unique-benefits .title {
+  font-family: Rubik;
+  font-weight: 600;
+  font-size: 30px;
+}
+.unique-benefits p {
+  font-family: outfit;
+  text-align: center;
+}
+.unique-benefits-cards {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.unique-benefits-cards hr {
+  height: 42px;
+  border-color: #ffdbb8;
+}
+.other-advantages {
+  padding: 0 100px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 100px;
+}
+.other-advantages >img{
+  width: 470px;
+  height: 500px;
+}
+.other-advantages-cards .title {
+  font-family: Outfit;
+  font-weight: 600;
+  font-size: 39px;
+}
+.other-advantages-cards {
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.other-advantages-card {
+  display: flex;
+  border-radius: 16px;
+  border-style: solid;
+  border-color: #ffdbb8;
+  gap: 16px;
+  padding: 16px;
+  align-items: flex-start;
+  margin-top: 10px;
+}
+.other-advantages-card-title {
+  font-family: Rubik;
+  font-weight: 600;
+  font-size: 24px;
+}
+.other-advantages-card div {
+  gap: 10px;
+}
+.other-advantages-card div p {
+  font-family: Outfit;
+  width: 533px;
+}
+.spices {
+  width: 500px;
+}
+.become-chef {
+  height: 431px;
+  padding: 0 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 100px;
+}
+.become-chef-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  width: 613px;
+}
+.become-chef-content p {
+  font-family: Outfit;
+  width: 500px;
+  text-align: justify;
+}
+.become-chef-content .title {
+  font-family: Rubik;
+  font-weight: 600;
+  font-size: 39px;
+}
+.become-chef img {
+  width: 520px;
+  object-fit: contain;
+}
+.become-chef-content span {
+  font-weight: 700;
+  font-family: outfit;
+}
+.become-chef .true {
+  width: 22px;
+}
+.chef-task {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+}
+.become-chef-content button {
+  background-color: #d27722;
+  border-radius: 4px;
+  padding: 8px 16px;
+  border-style: none;
+  font-family: outfit;
+  font-weight: 500;
+  font-size: 18px;
+}
+.become-chef-content a img {
+  width: 20px;
+}
+.become-chef-content a {
+  font-family: outfit;
+  font-size: 14px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 13px;
+}
+.sign-up-container {
+  height: 550px;
+  background-color: #d27722;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 100px 0 0;
+  margin-bottom: 100px;
+}
+.sign-up-container p {
+  font-family: outfit;
+  width: 558px;
+}
+.classes {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  width: 558px;
+}
+.classes span {
+  font-weight: 700;
+}
+.sign-up-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+  align-items: flex-start;
+}
+.classes-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.sign-up-container button {
+  font-weight: 500;
+  font-family: outfit;
+  color: #ffdbb8;
+  border-radius: 4px;
+  border-color: #ffdbb8;
+  border-style: solid;
+  background-color: transparent;
+  padding: 8px 16px;
+  width: 130px;
+}
+.cook-blog {
+  padding: 0 100px 100px 100px;
+  border-bottom-style: solid;
+  border-color: #d27722;
+  border-width: 1px;
+}
+.cook-blog h1 {
+  font-weight: 600;
+  font-family: Rubik;
+  font-size: 35px;
+}
+.cook-blog .blog-desc {
+  font-family: Outfit;
+  margin-bottom: 50px;
+}
+.cook-blog-body {
+  display: flex;
+  justify-content: space-between;
+}
+.cook-blog h2 {
+  font-family: Outfit;
+}
+.categories-btn {
+  display: flex;
+  flex-wrap: wrap;
+  width: 479px;
+  gap: 16px;
+  margin-top: 20px;
+  margin-bottom: 35px;
+}
+.categories-btn button,
+.countries-btn button {
+  font-family: Kanit;
+  color: #d27722;
+  border-radius: 58px;
+  padding: 4px 24px;
+  border-color: #ffdbb8;
+  border-style: solid;
+  background-color: transparent;
+  font-size: 18px;
+}
+.countries-btn {
+  margin-top: 20px;
+  width: 324px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.cook-blog-card {
+  border-radius: 16px;
+  border-style: solid;
+  border-color: #ffdbb8;
+}
+.cook-blog-card-pic {
+  width: 304px;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+.cook-blog-card-info {
+  font-family: Rubik;
+  font-weight: 600;
+  font-family: 20px;
+  width: 245px;
+  margin-top: 10px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+.cook-blog-card .date-card {
+  font-family: Outfit;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+.cook-blog-pic {
+  display: flex;
+  justify-content: space-between;
+  width: 635px;
+}
+footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 100px;
+  height: 169px;
+  align-items: flex-start;
+  padding-top: 60px;
+}
+footer p {
+  font-size: 18px;
+  font-family: Outfit;
+}
+.about,.contact,.social{
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.about a,
+.contact a {
+  text-decoration: none;
+  font-size: 20px;
+  font-family: outfit;
+  color: #ffdbb8;
+}
