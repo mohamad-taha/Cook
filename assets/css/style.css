@@ -68,6 +68,24 @@ nav .actions button {
 .actions div button img {
   padding-left: 5px;
 }
+nav path {
+  fill: white;
+}
+nav .actions .list-btn {
+  display: none;
+}
+@media (max-width: 834px) {
+  nav {
+    padding: 20px;
+  }
+  nav .actions button,
+  nav .logo-links ul {
+    display: none;
+  }
+  nav .actions .list-btn {
+    display: block;
+  }
+}
 .hero {
   margin-top: 30px;
   padding: 0 100px;
@@ -185,6 +203,62 @@ nav .actions button {
   justify-content: center;
   padding-left: 10px;
 }
+@media (max-width: 360px) {
+  .hero {
+    flex-direction: column;
+    padding: 0;
+    align-items: center;
+  }
+  .hero-comments {
+    position: static;
+    gap: 30px;
+  }
+  .hero-comment {
+    position: static;
+    width: 300px;
+  }
+  .shape {
+    display: none;
+  }
+  .hero-comments > img {
+    width: 300px;
+    margin-top: 30px;
+  }
+  .hero h1 {
+    font-size: 30px;
+    width: 300px;
+    line-height: 30px;
+  }
+  .hero-desc {
+    width: 300px;
+  }
+}
+@media (min-width: 361px) and (max-width: 834px) {
+  .hero {
+    flex-direction: column;
+    padding: 0;
+    padding-left: 20px;
+  }
+  .hero-comments {
+    margin-top: 100px;
+    position: static;
+    gap: 30px;
+  }
+  .hero-comment {
+    position: static;
+    width: 300px;
+  }
+  .shape {
+    display: none;
+  }
+  .hero-comments > img {
+    margin-top: 30px;
+  }
+  .hero .hero-desc {
+    gap: 30px;
+  }
+}
+/* category-learn-section & unique-benefits-section */
 .category-learn-container,
 .unique-benefits {
   padding: 0 100px;
@@ -285,13 +359,100 @@ nav .actions button {
   height: 42px;
   border-color: #ffdbb8;
 }
+@media (max-width: 360px) {
+  .unique-benefits {
+    padding: 0;
+    text-align: center;
+  }
+  .unique-benefits-cards {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .unique-benefits-header {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .unique-benefits-header h1,
+  .unique-benefits-header p {
+    width: 300px;
+  }
+  .category-learn-container {
+    padding: 0;
+    padding-left: 20px;
+  }
+
+  .unique-benefits-header div {
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .learn-category-header div {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .learn-category-body {
+    height: max-content;
+    flex-direction: column;
+    gap: 30px;
+  }
+  .learn-catergory-card,
+  .learn-catergory-card-barkey {
+    width: 280px;
+    padding: 20px;
+  }
+}
+@media (min-width: 361px) and (max-width: 834px) {
+  .unique-benefits {
+    padding: 0;
+    text-align: center;
+  }
+  .unique-benefits-cards {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .unique-benefits-header {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .unique-benefits-header h1,
+  .unique-benefits-header p {
+    width: 300px;
+  }
+  .category-learn-container {
+    padding: 0;
+    padding-left: 20px;
+  }
+
+  .unique-benefits-header div {
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .learn-category-header div {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .learn-category-body {
+    height: max-content;
+    justify-content: flex-start;
+    gap: 30px;
+  }
+  .learn-catergory-card,
+  .learn-catergory-card-barkey {
+    width: 280px;
+    padding: 20px;
+  }
+}
+/* other-advantages-section */
 .other-advantages {
   padding: 0 100px;
   display: flex;
   justify-content: space-between;
   margin-bottom: 100px;
 }
-.other-advantages >img{
+.other-advantages > img {
   width: 470px;
   height: 500px;
 }
@@ -331,6 +492,47 @@ nav .actions button {
 .spices {
   width: 500px;
 }
+@media (max-width: 360px) {
+  .other-advantages {
+    flex-direction: column;
+    padding: 0;
+  }
+  .other-advantages > img {
+    width: 100%;
+    object-fit: cover;
+  }
+  .other-advantages-cards {
+    height: max-content;
+    align-items: center;
+    margin-top: 20px;
+    gap: 20px;
+  }
+  .other-advantages-card {
+    flex-direction: column;
+    width: 300px;
+  }
+  .other-advantages-card div p {
+    font-family: Outfit;
+    width: 280px;
+  }
+}
+@media (min-width: 361px) and (max-width: 834px) {
+  .other-advantages {
+    flex-direction: column;
+    padding: 0;
+  }
+  .other-advantages > img {
+    width: 100%;
+    object-fit: cover;
+  }
+  .other-advantages-cards {
+    height: max-content;
+    align-items: center;
+    margin-top: 20px;
+    gap: 20px;
+  }
+}
+/* become-chef-section */
 .become-chef {
   height: 431px;
   padding: 0 100px;
@@ -392,6 +594,37 @@ nav .actions button {
   align-items: center;
   gap: 13px;
 }
+@media (max-width: 360px) {
+  .become-chef {
+    flex-direction: column;
+    height: max-content;
+    padding: 0;
+    padding-left: 20px;
+    align-items: flex-start;
+  }
+  .become-chef-content p {
+    width: 300px;
+  }
+  .become-chef img {
+    width: 300px;
+    object-fit: cover;
+    margin-top: 20px;
+  }
+  .chef-task {
+    width: 300px;
+  }
+}
+@media (min-width: 361px) and (max-width: 834px) {
+  .become-chef {
+    flex-direction: column;
+    height: max-content;
+    align-items: flex-start;
+  }
+  .become-chef img {
+    margin-top: 20px;
+  }
+}
+/* sign-up-section */
 .sign-up-container {
   height: 550px;
   background-color: #d27722;
@@ -435,6 +668,44 @@ nav .actions button {
   background-color: transparent;
   padding: 8px 16px;
   width: 130px;
+}
+@media (max-width: 360px) {
+  .sign-up-container {
+    flex-direction: column;
+    height: max-content;
+    
+  }
+  .sign-up-container > img {
+    width: 360px;
+  }
+  .sign-up-content{
+    padding-left: 20px;
+    margin-bottom: 20px;
+  }
+  .sign-up-content >p{
+    margin-top: 10px;
+    width: 300px;
+  }
+  .classes{
+    width: 290px;
+  }
+}
+@media (min-width: 361px) and (max-width:834px) {
+
+  .sign-up-container > img {
+    width: 420px;
+    object-fit: cover;
+  }
+  .sign-up-content{
+    padding-left: 20px;
+  }
+  .sign-up-content >p{
+    margin-top: 10px;
+    width: 360px;
+  }
+  .classes{
+    width: 360px;
+  }
 }
 .cook-blog {
   padding: 0 100px 100px 100px;
@@ -518,6 +789,34 @@ nav .actions button {
   justify-content: space-between;
   width: 635px;
 }
+@media(max-width:360px){
+  .cook-blog{
+    padding: 0;
+    padding-left: 20px;
+    padding-bottom: 50px;
+  }
+  .cook-blog-body{
+    flex-direction: column;
+    gap: 20px;
+  }
+  .countries-btn,.categories-btn{
+    width: 300px;
+  }
+  .cook-blog-pic{
+    flex-direction: column;
+    gap: 20px;
+  }
+  .cook-blog-card{
+    width: max-content;
+  }
+}
+@media(min-width:361px) and (max-width:834px){
+  .cook-blog-body{
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+/* footer-section */
 footer {
   display: flex;
   justify-content: space-between;
@@ -530,7 +829,9 @@ footer p {
   font-size: 18px;
   font-family: Outfit;
 }
-.about,.contact,.social{
+.about,
+.contact,
+.social {
   display: flex;
   flex-direction: column;
   gap: 16px;
@@ -541,4 +842,14 @@ footer p {
   font-size: 20px;
   font-family: outfit;
   color: #ffdbb8;
+}
+@media(max-width:360px){
+  footer{
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    gap: 30px;
+    padding: 60px 0;
+    height: max-content;
+  }
 }
