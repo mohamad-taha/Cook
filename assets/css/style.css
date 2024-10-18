@@ -390,7 +390,7 @@ nav .actions .list-btn {
     flex-direction: column;
     gap: 10px;
   }
-  .learn-category-header{
+  .learn-category-header {
     padding-left: 20px;
     padding-right: 20px;
   }
@@ -605,14 +605,14 @@ nav .actions .list-btn {
     height: max-content;
     padding: 0;
   }
-  .become-chef-content{
+  .become-chef-content {
     align-items: center;
   }
   .become-chef-content p {
     width: 300px;
     text-align: left;
   }
-  .become-chef  >img {
+  .become-chef > img {
     width: 300px;
     object-fit: cover;
     margin-top: 20px;
@@ -682,7 +682,7 @@ nav .actions .list-btn {
     height: max-content;
   }
   .sign-up-container > img {
-    width: 360px;
+    width: 100vw;
   }
   .sign-up-content {
     padding-left: 20px;
@@ -703,7 +703,7 @@ nav .actions .list-btn {
     padding-bottom: 20px;
   }
   .sign-up-container > img {
-    width: 100%;
+    width: 100vw;
     object-fit: cover;
   }
   .sign-up-content {
@@ -822,7 +822,12 @@ nav .actions .list-btn {
   }
 }
 @media (min-width: 431px) and (max-width: 884px) {
+  .cook-blog{
+    padding: 0 20px;
+    padding-bottom: 100px;
+    }
   .cook-blog-body {
+    align-items: flex-start;
     flex-direction: column;
     gap: 20px;
   }
