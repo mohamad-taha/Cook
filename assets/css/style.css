@@ -5,7 +5,12 @@
 }
 body {
   background: #222222;
+}
+@media (max-width:884px){
+  body{
   overflow-x: hidden;
+
+  }
 }
 nav {
   font-family: outfit;
