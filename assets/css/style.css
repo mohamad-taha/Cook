@@ -606,6 +606,7 @@ nav .actions .list-btn {
   }
   .become-chef-content {
     align-items: center;
+    width: 100%;
   }
   .become-chef-content p {
     width: 300px;
@@ -817,6 +818,8 @@ nav .actions .list-btn {
   .cook-blog-pic {
     flex-direction: column;
     gap: 20px;
+    width: 100%;
+
   }
   .cook-blog-card {
     width: max-content;
