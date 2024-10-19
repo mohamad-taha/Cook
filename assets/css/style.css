@@ -6,12 +6,7 @@
 body {
   background: #222222;
 }
-@media (max-width:884px){
-  body{
-  overflow-x: hidden;
 
-  }
-}
 nav {
   font-family: outfit;
   display: flex;
@@ -824,7 +819,6 @@ nav .actions .list-btn {
     flex-direction: column;
     gap: 20px;
     width: 100%;
-
   }
   .cook-blog-card {
     width: max-content;
