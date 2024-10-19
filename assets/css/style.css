@@ -679,9 +679,10 @@ nav .actions .list-btn {
   .sign-up-container {
     flex-direction: column;
     height: max-content;
+    width: 100%;
   }
   .sign-up-container > img {
-    width: 100dvw;
+    width: 100%;
   }
   .sign-up-content {
     padding-left: 20px;
@@ -700,9 +701,10 @@ nav .actions .list-btn {
     flex-direction: column;
     height: max-content;
     padding-bottom: 20px;
+    width: 100%;
   }
   .sign-up-container > img {
-    width: 100dvw;
+    width: 100%;
     object-fit: cover;
   }
   .sign-up-content {
