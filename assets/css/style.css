@@ -1,12 +1,12 @@
 * {
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 
   color: white;
 }
 body {
   background: #222222;
-  overflow-x: hidden;
 }
 nav {
   font-family: outfit;
@@ -822,10 +822,10 @@ nav .actions .list-btn {
   }
 }
 @media (min-width: 431px) and (max-width: 884px) {
-  .cook-blog{
+  .cook-blog {
     padding: 0 20px;
     padding-bottom: 100px;
-    }
+  }
   .cook-blog-body {
     align-items: flex-start;
     flex-direction: column;
