@@ -681,7 +681,7 @@ nav .actions .list-btn {
     height: max-content;
   }
   .sign-up-container > img {
-    width: 100vw;
+    width: 100dvw;
   }
   .sign-up-content {
     padding-left: 20px;
@@ -702,7 +702,7 @@ nav .actions .list-btn {
     padding-bottom: 20px;
   }
   .sign-up-container > img {
-    width: 100vw;
+    width: 100dvw;
     object-fit: cover;
   }
   .sign-up-content {
