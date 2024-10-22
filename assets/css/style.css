@@ -618,13 +618,14 @@ nav .actions .list-btn {
   }
   .chef-task {
     justify-content: center;
+    width: 250px;
   }
   .become-chef > img {
-    width: 280px;
+    width: 80%;
     margin-top: 20px;
   }
   .chef-task p {
-    width: 250px;
+    width: 100%;
   }
 }
 @media (min-width: 431px) and (max-width: 892px) {
@@ -697,8 +698,11 @@ nav .actions .list-btn {
     margin-top: 10px;
     width: 300px;
   }
-  .classes p{
-    width: 260px;
+  .classes {
+    width: 250px;
+  }
+  .classes p {
+    width: 100% ;
   }
 }
 @media (min-width: 431px) and (max-width: 892px) {
@@ -719,7 +723,7 @@ nav .actions .list-btn {
     margin-top: 10px;
     width: 360px;
   }
-  .classes p{
+  .classes p {
     width: max-content;
   }
 }
