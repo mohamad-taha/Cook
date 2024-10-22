@@ -74,7 +74,7 @@ nav path {
 nav .actions .list-btn {
   display: none;
 }
-@media (max-width: 884px) {
+@media (max-width: 892px) {
   nav {
     padding: 20px;
   }
@@ -92,6 +92,7 @@ nav .actions .list-btn {
   display: flex;
   justify-content: space-between;
   margin-bottom: 100px;
+  flex-wrap: wrap;
 }
 .hero h1 {
   font-family: "Rubik";
@@ -205,9 +206,8 @@ nav .actions .list-btn {
 }
 @media (max-width: 430px) {
   .hero {
-    flex-direction: column;
     padding: 0;
-    align-items: center;
+    justify-content: center;
   }
   .hero-comments {
     position: static;
@@ -233,9 +233,8 @@ nav .actions .list-btn {
     width: 300px;
   }
 }
-@media (min-width: 431px) and (max-width: 884px) {
+@media (min-width: 431px) and (max-width: 892px) {
   .hero {
-    flex-direction: column;
     padding: 0;
     padding-left: 20px;
   }
@@ -283,6 +282,7 @@ nav .actions .list-btn {
   display: flex;
   justify-content: space-between;
   margin-top: 10px;
+  flex-wrap: wrap;
 }
 .learn-category-header button,
 .unique-benefits-header button {
@@ -354,6 +354,7 @@ nav .actions .list-btn {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 .unique-benefits-cards hr {
   height: 42px;
@@ -365,8 +366,11 @@ nav .actions .list-btn {
     text-align: center;
   }
   .unique-benefits-cards {
-    flex-direction: column;
+    justify-content: center;
     gap: 30px;
+    hr {
+      display: none;
+    }
   }
   .unique-benefits-header {
     display: flex;
@@ -407,7 +411,7 @@ nav .actions .list-btn {
     padding: 20px;
   }
 }
-@media (min-width: 431px) and (max-width: 884px) {
+@media (min-width: 431px) and (max-width: 892px) {
   .unique-benefits {
     padding: 0;
     text-align: center;
@@ -521,7 +525,7 @@ nav .actions .list-btn {
     width: 280px;
   }
 }
-@media (min-width: 431px) and (max-width: 884px) {
+@media (min-width: 431px) and (max-width: 892px) {
   .other-advantages {
     flex-direction: column;
     padding: 0;
@@ -545,6 +549,7 @@ nav .actions .list-btn {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 100px;
+  flex-wrap: wrap;
 }
 .become-chef-content {
   display: flex;
@@ -601,32 +606,28 @@ nav .actions .list-btn {
 }
 @media (max-width: 430px) {
   .become-chef {
-    flex-direction: column;
     height: max-content;
     padding: 0;
-  }
-  .become-chef-content {
-    align-items: center;
-    width: 100%;
+    margin-left: 20px;
   }
   .become-chef-content p {
     width: 300px;
     text-align: left;
   }
+  .chef-task {
+    justify-content: center;
+  }
   .become-chef > img {
-    width: 300px;
-    object-fit: cover;
+    width: 280px;
     margin-top: 20px;
   }
-  .chef-task {
-    width: 300px;
+  .chef-task p {
+    width: 250px;
   }
 }
-@media (min-width: 431px) and (max-width: 884px) {
+@media (min-width: 431px) and (max-width: 892px) {
   .become-chef {
-    flex-direction: column;
     height: max-content;
-    align-items: flex-start;
   }
   .become-chef img {
     margin-top: 20px;
@@ -638,7 +639,7 @@ nav .actions .list-btn {
   background-color: #d27722;
   display: flex;
   justify-content: space-between;
-  padding: 0 100px 0 0;
+  padding: 0;
   margin-bottom: 100px;
 }
 .sign-up-container p {
@@ -694,11 +695,11 @@ nav .actions .list-btn {
     margin-top: 10px;
     width: 300px;
   }
-  .classes {
-    width: 290px;
+  .classes p{
+    width: 260px;
   }
 }
-@media (min-width: 431px) and (max-width: 884px) {
+@media (min-width: 431px) and (max-width: 892px) {
   .sign-up-container {
     flex-direction: column;
     height: max-content;
@@ -716,8 +717,8 @@ nav .actions .list-btn {
     margin-top: 10px;
     width: 360px;
   }
-  .classes {
-    width: 360px;
+  .classes p{
+    width: max-content;
   }
 }
 .cook-blog {
@@ -825,7 +826,7 @@ nav .actions .list-btn {
     width: max-content;
   }
 }
-@media (min-width: 431px) and (max-width: 884px) {
+@media (min-width: 431px) and (max-width: 892px) {
   .cook-blog {
     padding: 0 20px;
     padding-bottom: 100px;
