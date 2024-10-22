@@ -216,6 +216,8 @@ nav .actions .list-btn {
   .hero-comment {
     position: static;
     width: 300px;
+    top: 0;
+    right: 0;
   }
   .shape {
     display: none;
