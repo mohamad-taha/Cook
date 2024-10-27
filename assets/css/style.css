@@ -206,7 +206,7 @@ nav .actions .list-btn {
 }
 @media (max-width: 430px) {
   .hero {
-    padding: 0;
+    padding: 0 20px;
     justify-content: center;
   }
   .hero-comments {
@@ -215,7 +215,7 @@ nav .actions .list-btn {
   }
   .hero-comment {
     position: static;
-    width: 300px;
+    width: 100%;
     top: 0;
     right: 0;
   }
@@ -223,16 +223,17 @@ nav .actions .list-btn {
     display: none;
   }
   .hero-comments > img {
-    width: 300px;
+    width: 100%;
     margin-top: 30px;
+    margin-right: 0;
   }
   .hero h1 {
     font-size: 30px;
-    width: 300px;
+    width: 100%;
     line-height: 30px;
   }
   .hero-desc {
-    width: 300px;
+    width: 100%;
   }
 }
 @media (min-width: 431px) and (max-width: 892px) {
@@ -364,7 +365,7 @@ nav .actions .list-btn {
 }
 @media (max-width: 430px) {
   .unique-benefits {
-    padding: 0;
+    padding: 0 20px;
     text-align: center;
   }
   .unique-benefits-cards {
@@ -381,10 +382,13 @@ nav .actions .list-btn {
   }
   .unique-benefits-header h1,
   .unique-benefits-header p {
-    width: 300px;
+    width: 100%;
+  }
+  .unique-benefits .unique-benefits-cards .unique-benefits-card {
+    height: 100%;
   }
   .category-learn-container {
-    padding: 0;
+    padding: 0 20px;
   }
 
   .unique-benefits-header div {
@@ -396,10 +400,6 @@ nav .actions .list-btn {
     flex-direction: column;
     gap: 10px;
   }
-  .learn-category-header {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
   .learn-category-body {
     height: max-content;
     flex-direction: column;
@@ -409,8 +409,11 @@ nav .actions .list-btn {
   }
   .learn-catergory-card,
   .learn-catergory-card-barkey {
-    width: 280px;
-    padding: 20px;
+    padding: 20px 10px;
+    width: 90%;
+    .learn-catergory-card-body p {
+      width: 100%;
+    }
   }
 }
 @media (min-width: 431px) and (max-width: 892px) {
@@ -506,7 +509,7 @@ nav .actions .list-btn {
 @media (max-width: 430px) {
   .other-advantages {
     flex-direction: column;
-    padding: 0;
+    padding: 0 20px;
   }
   .other-advantages > img {
     width: 100%;
@@ -520,11 +523,11 @@ nav .actions .list-btn {
   }
   .other-advantages-card {
     flex-direction: column;
-    width: 300px;
+    width: 80%;
   }
   .other-advantages-card div p {
     font-family: Outfit;
-    width: 280px;
+    width: 100%;
   }
 }
 @media (min-width: 431px) and (max-width: 892px) {
@@ -609,16 +612,15 @@ nav .actions .list-btn {
 @media (max-width: 430px) {
   .become-chef {
     height: max-content;
-    padding: 0;
-    margin-left: 20px;
+    padding: 0 20px;
   }
   .become-chef-content p {
-    width: 300px;
+    width: 100%;
     text-align: left;
   }
   .chef-task {
     justify-content: center;
-    width: 250px;
+    width: 100%;
   }
   .become-chef > img {
     width: 80%;
@@ -685,24 +687,24 @@ nav .actions .list-btn {
   .sign-up-container {
     flex-direction: column;
     height: max-content;
-    width: 100%;
+    align-items: center;
   }
   .sign-up-container > img {
     width: 100%;
   }
   .sign-up-content {
-    padding-left: 20px;
     margin-bottom: 20px;
+    width: 80%;
   }
   .sign-up-content > p {
     margin-top: 10px;
-    width: 300px;
+    width: 100%;
   }
   .classes {
-    width: 250px;
+    width: 100%;
   }
   .classes p {
-    width: 100% ;
+    width: 100%;
   }
 }
 @media (min-width: 431px) and (max-width: 892px) {
@@ -811,8 +813,7 @@ nav .actions .list-btn {
 }
 @media (max-width: 430px) {
   .cook-blog {
-    padding: 0;
-    padding-left: 20px;
+    padding: 0 20px;
     padding-bottom: 50px;
   }
   .cook-blog-body {
@@ -821,7 +822,7 @@ nav .actions .list-btn {
   }
   .countries-btn,
   .categories-btn {
-    width: 300px;
+    width: 100%;
   }
   .cook-blog-pic {
     flex-direction: column;
@@ -829,7 +830,10 @@ nav .actions .list-btn {
     width: 100%;
   }
   .cook-blog-card {
-    width: max-content;
+    width: 100%;
+    .cook-blog-card-pic{
+      width: 100%;
+    }
   }
 }
 @media (min-width: 431px) and (max-width: 892px) {
